@@ -1,4 +1,4 @@
-package com.ircloud.grypania.code;
+package com.rttx.mybatisplus.code;
 
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -53,7 +53,7 @@ public class CodeGenerator {
         strategy.setLogicDeleteFieldName("fdelete");
         strategy.entityTableFieldAnnotationEnable(true);
         strategy.setEntityColumnConstant(true);
-        strategy.setInclude(new String[]{"t_user"}); // 需要生成的表
+        strategy.setInclude(new String[]{"t_user","t_user_detail","t_user_attr"}); // 需要生成的表
         mpg.setStrategy(strategy);
 
         // 包配置
