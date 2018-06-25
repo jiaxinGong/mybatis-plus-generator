@@ -30,8 +30,8 @@ public class CodeGenerator {
         gc.setFileOverride(true);// 文件是否覆盖
         gc.setActiveRecord(false);// 开启 ActiveRecord 模式
         gc.setEnableCache(false);// XML 二级缓存
-        gc.setBaseResultMap(false);// XML ResultMap
-        gc.setBaseColumnList(false);// XML columList
+        gc.setBaseResultMap(true);// XML ResultMap
+        gc.setBaseColumnList(true);// XML columList
         gc.setAuthor("Bron");
         gc.setIdType(IdType.ID_WORKER);
         mpg.setGlobalConfig(gc);
@@ -42,7 +42,7 @@ public class CodeGenerator {
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
-        dsc.setUrl("jdbc:mysql://192.168.9.172:3306/user?characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://192.168.9.172:3306/iam?characterEncoding=utf8");
         mpg.setDataSource(dsc);
 
         // 策略配置
@@ -59,7 +59,7 @@ public class CodeGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setEntity("model");
-        pc.setParent("com.rttx.scaffold");
+        pc.setParent("com.rttx.iam");
         pc.setModuleName("dao");
         mpg.setPackageInfo(pc);
 
