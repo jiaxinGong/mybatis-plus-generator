@@ -1,4 +1,4 @@
-package com.rttx.mybatisplus.code;
+package com.zfax.mybatisplus.code;
 
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
@@ -59,7 +59,7 @@ public class CodeGenerator {
         // 包配置
         PackageConfig pc = new PackageConfig();
         pc.setEntity("model");
-        pc.setParent("com.rttx.iam");
+        pc.setParent("com.zfax.iam");
         pc.setModuleName("dao");
         mpg.setPackageInfo(pc);
 
